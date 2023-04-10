@@ -1,0 +1,153 @@
+:root {
+    /* colors */
+    --color-card: #1F8A70;
+    --color-bg: #B3FFAE;
+    --color-fonts: #ECF2FF;
+    --color-font2: #FB743E;
+    /* font-family */
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-accent: 'Delicious Handrawn', cursive;
+    /* font-weight */
+    --fw-thin: 100;
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+
+/* Box-sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* Removing default margins */
+* {
+    margin: 0;
+    padding: 0;
+    /* text-decoration: none; */
+    list-style: none;
+}
+
+/* allowing for percentage-based heights */
+html,
+body {
+    height: 100%;
+}
+/* typography scuffs - line-height - improved text rendering */
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--ff-primary);
+    background-color: var(--color-card);
+    
+}
+h1,
+h2,
+h3 {
+    line-height: 1.7;
+}
+/* text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+/* media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/* Removing built-in Typography*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.container {
+    margin: 10em 7em 0em;
+    box-shadow: 1px 1px 10px 10px var(--color-bg);
+}
+
+.card {
+    color: var(--color-fonts);
+    background-color: black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 2em 2em;
+}
+
+.steve {
+    background-color:var(--color-card);
+    color: var(--color-fonts);
+    padding: 1.5em 1.5em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.steve h3 {
+    font-size: 45px;
+    font-weight: var(--fw-light);
+    line-height: 1.2;
+}
+
+.attributes {
+    background: var(--color-fonts);
+}
+
+.attributes ul {
+    color: var(--color-card);
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--color-fonts);
+    padding: 2em 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.attributes ul li {
+    font-weight: var(--fw-light);
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.attributes h3 {
+    color: #1F8A70;
+    font-size: 28px;
+    font-weight: var(--fw-extra);
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 1em;
+}
+
+.card-stats {
+    font-size: 28px;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-light);
+    letter-spacing: 0.02px;
+    padding-bottom: 0.5em;
+}
+
+.card-about {
+    font-size: 22px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
